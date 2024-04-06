@@ -4,6 +4,12 @@ import java.util.*;
 
 public class TopologicalSortDFS {
 
+// Topological sorting for Directed Acyclic Graph (DAG)
+//  is a linear ordering of vertices such that for every 
+// directed edge u-v, vertex u comes before v in the 
+// ordering.
+
+
     void dfs(Node node, boolean visited[], Stack<Integer> stack) {
         int val = node.val;
         visited[val] = true;
